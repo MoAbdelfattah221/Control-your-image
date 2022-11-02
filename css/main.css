@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #927DFC;
+}
+
+section .main-box {
+  background-color: #fff;
+  width: 500px;
+  cursor: pointer;
+}
+section .main-box .image-upload {
+  border: 3px dotted #927DFC;
+  height: 250px;
+}
+section .main-box .dimensions input {
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+section .main-box .check-box div {
+  flex-basis: 40%;
+}
+section .main-box .check-box div input {
+  accent-color: #927DFC;
+}
+@media (max-width: 767px) {
+  section .main-box .dimensions, section .main-box .check-box {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+section .main-box button {
+  outline: none;
+  border: none;
+  background-color: #927DFC;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+section .main-box button:hover {
+  background-color: #866ff9;
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.active + p {
+  display: none !important;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/shortcut-icon.png">
+    <title>Resize & Compress Images</title>
+</head>
+<body class="w-100">
+    <section>
+        <div class="vh-100 container d-flex justify-content-center align-items-center">
+            <div class="main-box p-4 rounded mw-100">
+                <div class="image-upload position-relative rounded text-center d-flex justify-content-center align-items-center flex-column">
+                    <input type="file" accept="image/*" id="image-upload" hidden>
+                    <label class="mw-100" for="image-upload"></label>
+                    <img class="mw-100 mh-100 rounded" src="images/upload-icon.svg" alt="">
+                    <p class="m-0">Browse File to Upload</p>
+                </div>
+                <div class="dimensions my-4 d-flex justify-content-between align-items-center">
+                    <div>
+                        <label class="d-block mb-2" for="">Width</label>
+                        <input class="width py-2 px-3 mw-100 rounded" type="number" min="0" name="" id="">
+                    </div>
+                    <div>
+                        <label class="d-block mb-2" for="">Height</label>
+                        <input class="height py-2 px-3 mw-100 rounded" type="number" min="0" name="" id="">
+                    </div>
+                </div>
+                <div class="check-box mb-3 d-flex justify-content-between align-items-center">
+                    <div>
+                        <input class="ratio-btn" type="checkbox" id="check-1" checked>
+                        <label for="check-1">Lock aspect ratio</label>
+                    </div>
+                    <div>
+                        <input class="reduce" type="checkbox" id="check-2">
+                        <label for="check-2">Reduce quality</label>
+                    </div>
+                </div>
+                <button class="text-light py-3 rounded w-100 mw-100">DOWNLOAD IMAGE</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
